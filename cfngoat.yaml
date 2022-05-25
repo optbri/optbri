@@ -78,7 +78,7 @@ Resources:
         Fn::Select:
           - "0"
           - Fn::GetAZs: ""
-      #Encrypted: False
+      #Encrypted: true
       Size: 1
       Tags:
         - Key: Name
@@ -99,6 +99,7 @@ Resources:
           Value: jonathan.jozwiak/nimrodkor
         - Key: git_last_modified_at
           Value: "2021-08-23 13:51:41"
+      Encrypted: true
 
   ### CFN Does not Support Volume Snapshot
   EBSAttachment:
